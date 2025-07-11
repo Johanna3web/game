@@ -1,0 +1,149 @@
+.App {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #ffe6f0;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    color: #d63384;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #d63384;
+    border-radius: 8px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card.flipped {
+    background-color: #d63384;
+    color: white;
+    cursor: default;
+  }
+  
+  .card.matched {
+    background-color: #28a745;
+    color: white;
+    cursor: default;
+  }
+  
+  .modal {
+    position: fixed;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    border: 3px solid #d63384;
+  }
+  
+  .modal-content button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #d63384;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .auth-container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #d63384;
+    border-radius: 8px;
+    background-color: #fff0f6;
+  }
+  
+  .auth-container input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1.5px solid #d63384;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .auth-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d63384;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  .toggle-auth {
+    margin-top: 10px;
+    color: #d63384;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  header {
+    margin-bottom: 10px;
+  }
+  
+  header button {
+    margin-left: 10px;
+    padding: 4px 8px;
+    background-color: #d63384;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .leaderboard {
+    margin-top: 40px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff0f6;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #d63384;
+    text-align: left;
+  }
+  
+  .leaderboard h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .leaderboard ol {
+    padding-left: 20px;
+  }
+  

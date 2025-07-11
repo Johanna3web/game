@@ -1,0 +1,13 @@
+project-root/
+│
+├── backend/                # Your backend server
+│   ├── server.js           # Express server + API routes
+│   ├── package.json        # Backend dependencies & scripts
+│   ├── memorymatch.db      # SQLite database file (auto-created)
+│   └── client/             # (after build) React production build here
+│
+└── frontend/               # Your React app source code
+    ├── public/             # React public files (index.html etc.)
+    ├── src/                # React components, App.js, App.css, etc.
+    ├── package.json        # Frontend dependencies & scripts
+    └── README.md           # React app readme (optional)
